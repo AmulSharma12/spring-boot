@@ -1,0 +1,47 @@
+Spring boot
+===================
+
+=> Setup Development Environment
+===================================
+Step 1 => Install Java Jdk (JDK-22)
+	-  https://www.oracle.com/in/java/technologies/downloads/
+	
+Step 2 => Install Intellij Idea - (Community edition/Ultimate edition)
+	- https://www.jetbrains.com/idea/download/?section=windows
+	
+Step 3  =>  Installing Eclipse 
+	- https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers
+
+Step 4 => Installing STS (Same as eclipse but provide the spring boot support)
+	-  https://spring.io/tools
+	
+Step 5 => Installing mysql
+	- https://dev.mysql.com/downloads/installer/
+	-Using mysql command line client
+		- https://stackoverflow.com/questions/65472502/mysql-8-0-command-line-client-crashes-right-after-entering-the-correct-password (Error fixed - mysql command line client)
+		- \s   command for information of port and all
+	- Using mysql workbench
+	
+Step 6 => Installing Postman
+	-  https://www.postman.com/downloads/
+	- for testing - https://datausa.io/api/data?drilldowns=Nation&measures=Population
+	
+Step 7 => Installing lombok in STS
+	- https://projectlombok.org/download
+	- specify location 
+	- in pom.xml  add dependency for lombok.
+	
+Step 8 => Installing lombok in Intellij
+	- Step 1-  plugin - lombok - installed and enabled
+	- settting - Build execution environment - compiler - annotation processor - enable
+	- Step 3 - create maven project - build
+	- Step 4 - Adding lombok to your pom file - https://projectlombok.org/setup/maven
+	
+	
+	
+	
+=> Understanding tight coupling with examples
+=========================================
+-> create starter sping project - https://start.spring.io/  (without snapshot version dont use )
+group -> identifies the project (kind of package)
+Artifact -> (project name)
