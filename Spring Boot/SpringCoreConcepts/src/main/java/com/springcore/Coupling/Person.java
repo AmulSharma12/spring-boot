@@ -5,15 +5,24 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
+    private Animal animal;
+    private Student student;
 
-    //now at run time we cant been able to chnage the animal
-    //means the Animal is tightly coupled with Person
-    @Autowired
-   Animal animal;
-   public Person(Animal animal){
+
+   //constructor injection preferred when the dependency is must  or compulsory need to inject
+   @Autowired
+   public Person(Animal animal, Student student){
+       System.out.println("------------------------- Constructor Injection ================================");
+       System.out.println("constructor injection -  applied in Person constructor for injecting animal dependency");
+       System.out.println(animal + " " + this.animal + " " + student + " " + this.student);
        this.animal = animal;
+       this.student = student;
+       System.out.println(animal + " " + this.animal + " " + student + " " + this.student);
    }
+
+
     public void playWithAnimal(){
         animal.play();
+        student.getDetails();
     }
 }

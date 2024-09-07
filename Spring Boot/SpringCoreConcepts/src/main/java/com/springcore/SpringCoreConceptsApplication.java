@@ -13,8 +13,8 @@ public class SpringCoreConceptsApplication {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(SpringCoreConceptsApplication.class, args);
-        Person personBean = applicationContext.getBean(Person.class);
-        personBean.playWithAnimal();
+        //Person personBean = applicationContext.getBean(Person.class);
+        //personBean.playWithAnimal();
 
         Test testBean = applicationContext.getBean(Test.class);
         testBean.testing();
