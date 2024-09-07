@@ -5,7 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
+    @Autowired
     private Animal animal;
+    @Autowired
     private Student student;
 
 
@@ -25,7 +27,7 @@ public class Person {
     public Animal getAnimal(){return this.animal;}
     public Student getStudent(){return this.student;}
 
-    @Autowired
+//    @Autowired
     public void setAnimal(Animal animal){
         System.out.println("------------------------- Setter Injection -Animal ================================");
         System.out.println("Setter injection -  applied in Person constructor for injecting animal & student dependency");
@@ -33,7 +35,7 @@ public class Person {
         this.animal = animal;
     }
 
-    @Autowired
+//    @Autowired
     public void setStudent(Student student){
         System.out.println("------------------------- Setter Injection - Student ================================");
         System.out.println("Setter injection -  applied in Person constructor for injecting animal & student dependency");
